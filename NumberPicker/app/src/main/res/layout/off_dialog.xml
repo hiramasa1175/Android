@@ -3,29 +3,21 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/layout_root"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical"
+  android:layout_height="wrap_content"
+  android:layout_margin="10dp"
+  android:gravity="center"
+  android:orientation="horizontal"
   android:padding="10dp"
   tools:context=".MainActivity">
 
-  <TextView
+  <NumberPicker
+    android:id="@+id/numPicker1"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ID" />
-
-  <EditText
-    android:id="@+id/customDlg_id"
-    android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
-  <TextView
+  <NumberPicker
+    android:id="@+id/numPicker2"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Password" />
-
-  <EditText
-    android:id="@+id/customDlg_pass"
-    android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
 </LinearLayout>
